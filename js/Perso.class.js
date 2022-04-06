@@ -1,11 +1,25 @@
+
+
+
 import Program from "./Program.class.js";
 
+// Class hero herite de la classe programme
 class Hero extends Program {
   constructor(name, pv, power, strength, armor, mana) {
     super(name, pv, power, strength, armor, mana);
-    ;
+     //gestionnaire d'événements (...)
+        // es6 -> fat-arrow
+        // $('#attaquer').on('click', (e) => this.onClickAttack(e));
+        // $('#defendre').on('click', (e) => this.onClickDefense(e));
+        // $('#sort').on('click', (e) => this.onClickSpell(e));
   }
+
+  // onClickAttack(e){
+  //   console.log('this',this);
+  //   e.preventDefault()
+
   
+    
   updateStatHero() {
     $("#pv_hero").text(`${this.pv}`);
     $("#power_hero").text(`${this.power}`);
@@ -15,6 +29,7 @@ class Hero extends Program {
   }
 }
 
+// Class Monster herite de la classe programme
 class Monster extends Program {
   constructor(name, pv, power, strength, armor, mana) {
     super(name, pv, power, strength, armor, mana);
