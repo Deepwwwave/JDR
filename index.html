@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Fight ! </h1>
+    </header>
+    <section class="area_fight">
+      <article class="area_fight-hero">
+        <ul class="area_fight-hero-stat">
+          <li>PV : <span id="pv_hero"></span></li>
+          <li>ATQ : <span id="strength_hero"></span></li>
+          <li>PUI : <span id="power_hero"></span></li>
+          <li>DEF : &nbsp<span id="armor_hero"></span></li>
+          <li>MANA : <span id="mana_hero"></span></li>
+        </ul>
+        <img src="img/hero.png" alt="Hero" title="Hero" />
+      </article>
+      <article class="area_fight-monster">
+        <img src="img/monster.png" alt="Monster" title="Monster" />
+        <ul class="area_fight-monster-stat">
+          <li><span id="pv_monster"></span> : PV</li>
+          <li><span id="strength_monster"></span> : ATQ</li>
+          <li><span id="power_monster"></span> : PUI</li>
+          <li><span id="armor_monster"></span> &nbsp : DEF</li>
+          <li><span id="mana_monster"></span> : MANA</li>
+        </ul>
+      </article>
+    </section>
+    <section class="info">info</section>
+    <section class="container_btn">
+      <button class="attack">Attaque</button>
+      <button class="defense">Defense</button>
+      <button class="power">Pouvoir</button>
+    </section>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

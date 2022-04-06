@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    padding-top:100px;
+}
+
+
+.area_fight{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 30px;
+    border: solid 2px grey;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.area_fight-hero, .area_fight-monster{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width: 225px;
+}
+
+.area_fight-monster{
+    align-items: flex-end;
+}
+
+.area_fight-hero{
+    align-items: flex-start;
+}
+
+ul{
+    list-style-type: none;
+}
+.area_fight-hero ul {
+    text-align: right;
+    padding:10px 30px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.area_fight-hero ul span{
+    color:blue;
+}
+
+.area_fight-monster ul {
+    text-align: left;
+    padding:10px 30px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.area_fight-monster ul span{
+    color: red;
+}
+
+img{
+    width:150px;
+}
+
+.info {
+    width: 520px;
+    border: solid 2px grey;
+    border-radius: 20px;
+    text-align: center;
+    padding:20px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.container_btn {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
